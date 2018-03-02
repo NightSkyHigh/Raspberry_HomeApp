@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <GridPane fx:id="day2Grid" alignment="CENTER" layoutX="424.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#switchDay2" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #87CEFA;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="day2Label" text="Torsdag" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/Sola.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day2Temp" layoutX="67.0" layoutY="68.0" text="3C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="day2Wind" layoutX="10.0" layoutY="368.0" text="Svak bris" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day3Grid" alignment="CENTER" layoutX="624.0" onMouseClicked="#switchDay3" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #baeaff;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="day3Label" text="Fredag" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/sologskyer.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day3Temp" text="30C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="day3Wind" text="Storm" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day4Grid" alignment="CENTER" layoutX="824.0" onMouseClicked="#switchDay4" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #87CEFA;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="day4Label" text="Lørdag" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/Sola.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day4Temp" text="1C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="day4Wind" text="Ingen Vind" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day1Grid" prefHeight="600.0" prefWidth="424.0" style="-fx-background-color: #baeaff;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="136.30780029296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="131.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="180.54696655273438" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="415.96206283569336" minHeight="10.0" prefHeight="258.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="backButton" fitHeight="102.0" fitWidth="137.0" onMousePressed="#changeBackIcon" onMouseReleased="#handleClick" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2">
+               <image>
+                  <Image url="@src/knapp1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img00" fitHeight="275.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@src/NotAvailable.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="windLabel0" text="Wind" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period0Temp" text="100 C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="todayLabel" text="Today" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label fx:id="time1Label" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time2Label" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time3Label" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img01" fitHeight="85.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            </ImageView>
+            <ImageView fx:id="img02" fitHeight="99.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            </ImageView>
+            <ImageView fx:id="img03" fitHeight="101.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            </ImageView>
+            <Label fx:id="period1Temp" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period2Temp" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="period3Temp" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="time0Label" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day1Grid1" alignment="CENTER" disable="true" layoutX="1.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#switchDay1" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #baeaff;" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="day2Label1" text="Today" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img0" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/lyn.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day1Temp" layoutX="67.0" layoutY="68.0" text="3C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="day2Wind1" layoutX="10.0" layoutY="368.0" text="Svak bris" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="backButton1" fitHeight="102.0" fitWidth="137.0" onMousePressed="#changeBackIcon" onMouseReleased="#handleClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@src/knapp1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day2Grid1" disable="true" layoutX="201.0" prefHeight="600.0" prefWidth="424.0" style="-fx-background-color: #87CEFA;" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="136.30780029296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="180.54696655273438" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="415.96206283569336" minHeight="10.0" prefHeight="258.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="img10" fitHeight="275.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@src/snow.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="windLabel01" text="Wind" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period0Temp1" text="100 C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="day2Label1" text="Torsdag" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label fx:id="time1Label1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time2Label1" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time3Label1" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img11" fitHeight="85.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/overskyet.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img12" fitHeight="99.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/overskyetlys.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img13" fitHeight="101.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/regn.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="period1Temp1" text="90C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period2Temp1" text="30C" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="period3Temp1" text="10C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="label0Time1" text="kl. 12-18" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day3Grid2" disable="true" layoutX="400.0" prefHeight="600.0" prefWidth="424.0" style="-fx-background-color: #baeaff;" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="136.30780029296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="180.54696655273438" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="415.96206283569336" minHeight="10.0" prefHeight="258.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="img20" fitHeight="275.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@src/snow.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="windLabel02" text="Wind" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period0Temp2" text="100 C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="day3Label1" text="Fredag" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label fx:id="time1Label2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time2Label2" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time3Label2" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img21" fitHeight="85.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/overskyet.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img22" fitHeight="99.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/overskyetlys.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img23" fitHeight="101.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/regn.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="period1Temp2" text="90C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period2Temp2" text="30C" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="period3Temp2" text="10C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="label0Time2" text="kl. 12-18" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="day4Grid1" disable="true" layoutX="600.0" prefHeight="600.0" prefWidth="424.0" style="-fx-background-color: #87CEFA;" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="136.30780029296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.89739990234375" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.05165100097656" minWidth="10.0" prefWidth="146.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="180.54696655273438" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="415.96206283569336" minHeight="10.0" prefHeight="258.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="427.3179168701172" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="img30" fitHeight="275.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@src/snow.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="windLabel03" text="Wind" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period0Temp3" text="100 C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="day4Label1" text="Lørdag" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label fx:id="time1Label3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time2Label3" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time3Label3" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img31" fitHeight="85.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/overskyet.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img32" fitHeight="99.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/overskyetlys.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img33" fitHeight="101.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@src/regn.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="period1Temp3" text="90C" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+            <Label fx:id="period2Temp3" text="30C" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="period3Temp3" text="10C" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="label0Time3" text="kl. 12-18" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <fx:define>
+       <ArrayList fx:id="temperatureList">
+           <fx:reference source="period0Temp" />
+           <fx:reference source="period1Temp" />
+           <fx:reference source="period2Temp" />
+           <fx:reference source="period3Temp" />
+           <fx:reference source="period1Temp1" />
+           <fx:reference source="period2Temp1" />
+           <fx:reference source="period0Temp1" />
+           <fx:reference source="period3Temp1" />
+           <fx:reference source="period1Temp2" />
+           <fx:reference source="period2Temp2" />
+           <fx:reference source="period0Temp2" />
+           <fx:reference source="period3Temp2" />
+           <fx:reference source="period1Temp3" />
+           <fx:reference source="period2Temp3" />
+           <fx:reference source="period0Temp3" />
+           <fx:reference source="period3Temp3" />
+       </ArrayList>
+       <ArrayList fx:id="gridList">
+           <fx:reference source="day1Grid1" />
+           <fx:reference source="day1Grid" />
+           <fx:reference source="day2Grid" />
+           <fx:reference source="day2Grid1" />
+           <fx:reference source="day3Grid" />
+           <fx:reference source="day3Grid2" />
+           <fx:reference source="day4Grid" />
+           <fx:reference source="day4Grid1" />
+       </ArrayList>
+       <ArrayList fx:id="weekdayList">
+           <fx:reference source="day2Label" />
+           <fx:reference source="day2Label1" />
+           <fx:reference source="day3Label" />
+           <fx:reference source="day3Label1" />
+           <fx:reference source="day4Label" />
+           <fx:reference source="day4Label1" />
+       </ArrayList>
+       <ArrayList fx:id="hourList">
+           <fx:reference source="time0Label" />
+           <fx:reference source="time1Label" />
+           <fx:reference source="time2Label" />
+           <fx:reference source="time3Label" />
+           <fx:reference source="time1Label1" />
+           <fx:reference source="time2Label1" />
+           <fx:reference source="label0Time1" />
+           <fx:reference source="time3Label1" />
+           <fx:reference source="time1Label2" />
+           <fx:reference source="time2Label2" />
+           <fx:reference source="label0Time2" />
+           <fx:reference source="time3Label2" />
+           <fx:reference source="time1Label3" />
+           <fx:reference source="time2Label3" />
+           <fx:reference source="label0Time3" />
+           <fx:reference source="time3Label3" />
+       </ArrayList>
+       <ArrayList fx:id="symbols">
+           <fx:reference source="img00" />
+           <fx:reference source="img01" />
+           <fx:reference source="img02" />
+           <fx:reference source="img03" />
+           <fx:reference source="img11" />
+           <fx:reference source="img12" />
+           <fx:reference source="img10" />
+           <fx:reference source="img13" />
+           <fx:reference source="img21" />
+           <fx:reference source="img22" />
+           <fx:reference source="img20" />
+           <fx:reference source="img23" />
+           <fx:reference source="img31" />
+           <fx:reference source="img32" />
+           <fx:reference source="img30" />
+           <fx:reference source="img33" />
+       </ArrayList>
+   </fx:define>
+   </children>
+</Pane>
