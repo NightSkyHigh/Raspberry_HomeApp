@@ -5,7 +5,7 @@ Todo:
 * Code cleanup
 * Make it resolution independent
 * Add perception instead if "wind"
-* Remove "wind" static text
+* Remove "wind" placeholder text
 
 Pictures of application:
 ![Weather](https://github.com/NightSkyHigh/Raspberry_HomeApp/blob/master/raspberry_home/src/Application/weatherPI.PNG)
