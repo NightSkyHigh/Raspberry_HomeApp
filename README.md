@@ -1,4 +1,11 @@
 # Raspberry_HomeApp
-A personal work in progress raspberry app that shows real time buss/tram departures and weather from YR.no
-project currently missing icons for the weather portion of the App, but will be added soon.
-Pictures and decription will also be added soon.
+A personal work in progress raspberry app that shows real time buss/tram departures and weather forecast from YR.no
+Todo:
+* Still missing some weather icons
+* Code cleanup
+* Make it resolution independent
+* Add perception instead if "wind"
+* Remove "wind" static text
+
+Pictures of application:
+
