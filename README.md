@@ -8,6 +8,5 @@ Todo:
 * Remove "wind" static text
 
 Pictures of application:
-https://github.com/NightSkyHigh/Raspberry_HomeApp/blob/master/raspberry_home/src/Application/weatherPI.PNG
 ![Weather](https://github.com/NightSkyHigh/Raspberry_HomeApp/blob/master/raspberry_home/src/Application/weatherPI.PNG)
 ![alt=Ruter](https://github.com/NightSkyHigh/Raspberry_HomeApp/blob/master/raspberry_home/src/Application/ruter.PNG)
